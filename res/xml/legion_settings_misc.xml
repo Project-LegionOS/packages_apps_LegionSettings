@@ -30,4 +30,10 @@
             android:summary="@string/allow_signature_fake_summary"
             android:defaultValue="false" />
 
+    <Preference
+        android:key="vol_steps"
+        android:title="@string/volume_steps_fragment_title"
+        android:summary="@string/volume_steps_summary"
+        android:icon="@drawable/ic_volume"
+        android:fragment="com.legion.settings.fragments.VolumeStepsFragment" />
 </PreferenceScreen>
