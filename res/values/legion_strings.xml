@@ -827,5 +827,7 @@
     <string name="navigation_bar_title">Navigation bar</string>
     <string name="system_navigation_summary">Choose which system navigation style to use</string>
 
+    <string name="navbar_visibility">Nav Bar</string>
+    <string name="navbar_vis_summary">Enable-disable navigation bar</string>
 </resources>
 
