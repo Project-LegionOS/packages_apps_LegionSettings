@@ -48,6 +48,20 @@
 
         </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="qs_header_category"
+        android:title="@string/qs_header_category_title">
+
+   <com.legion.settings.preferences.SystemSettingMasterSwitchPreference
+            android:key="status_bar_custom_header"
+            android:icon="@drawable/ic_header"
+            android:fragment="com.legion.settings.fragments.QsHeader"
+            android:title="@string/status_bar_custom_header_title"
+            android:summary="@string/status_bar_custom_header_summary"
+            android:defaultValue="false" />
+
+        </PreferenceCategory>
+
      <PreferenceCategory
         android:key="qs_datausage_category"
         android:title="@string/qs_datausage_category_title">
