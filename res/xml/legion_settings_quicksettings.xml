@@ -33,4 +33,10 @@
         android:summary="@string/qs_show_auto_brightness_summary"
         android:defaultValue="true" />
 
+    <com.legion.settings.preferences.SystemSettingSwitchPreference 
+        android:key="qs_datausage" 
+        android:title="@string/qs_datausage_title" 
+        android:summary="@string/qs_datausage_subtitle"
+        android:defaultValue="false" />
+
 </PreferenceScreen>

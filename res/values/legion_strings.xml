@@ -829,5 +829,10 @@
 
     <string name="navbar_visibility">Nav Bar</string>
     <string name="navbar_vis_summary">Enable-disable navigation bar</string>
+
+    <!-- QS DataUsage Toggle -->
+    <string name="qs_datausage_title">Show data usage in qs header</string>
+    <string name="qs_datausage_subtitle">Shows data usage in quick settings header of sim used for data</string>
+
 </resources>
 
