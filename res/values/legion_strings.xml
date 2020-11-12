@@ -817,5 +817,15 @@
     <!-- Lockscreen icons -->
     <string name="lockscreen_tuner_title">Lockscreen Shortcuts</string>
     <string name="lockscreen_tuner_summary">Modify the shortcuts shown in the lockscreen</string>
+
+    <!-- Navbar options -->
+    <string name="navbar_invert_layout_title">Invert layout</string>
+
+    <!-- Navbar options -->
+    <string name="nav_bar_tuner_title">Navigation bar tuner</string>
+    <string name="nav_bar_tuner_summary">Change navbar layout</string>
+    <string name="navigation_bar_title">Navigation bar</string>
+    <string name="system_navigation_summary">Choose which system navigation style to use</string>
+
 </resources>
 
