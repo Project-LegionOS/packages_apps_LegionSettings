@@ -899,6 +899,7 @@
         <item>15</item>
         <item>7</item>
         <item>5</item>
+     </string-array>
 	
 	<!-- QS header image -->
     <string-array name="custom_header_provider_entries" translatable="false">
@@ -908,5 +909,20 @@
     <string-array name="custom_header_provider_values" translatable="false">
         <item>@string/daylight_header_provider</item>
         <item>@string/file_header_provider</item>
+ </string-array>
+
+    <!-- Panel Background Style-->
+    <string-array name="panel_bg_titles" translatable="false">
+        <item>@string/panel_default</item>
+        <item>@string/panel_batik</item>
+        <item>@string/panel_kece</item>
+        <item>@string/panel_outline</item>
+    </string-array>
+
+    <string-array name="panel_bg_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
 </resources>

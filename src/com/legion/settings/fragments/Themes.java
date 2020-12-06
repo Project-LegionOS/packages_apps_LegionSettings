@@ -62,14 +62,13 @@ public class Themes extends DashboardFragment implements
         OnPreferenceChangeListener, Indexable {
 
     private static final String TAG = "Themes";
-
+    private static final String PREF_PANEL_BG = "panel_bg";
     private static final String ACCENT_COLOR = "accent_color";
     private static final String ACCENT_COLOR_PROP = "persist.sys.theme.accentcolor";
     private static final String GRADIENT_COLOR = "gradient_color";
     private static final String GRADIENT_COLOR_PROP = "persist.sys.theme.gradientcolor";
     private static final String PREF_THEME_SWITCH = "theme_switch";
     private static final String KEY_QS_PANEL_ALPHA = "qs_panel_alpha";
-    private static final String FILE_QSPANEL_SELECT = "file_qspanel_select";
     private static final int REQUEST_PICK_IMAGE = 0;
     private static final int MENU_RESET = Menu.FIRST;
 
@@ -82,7 +81,7 @@ public class Themes extends DashboardFragment implements
     private ColorPickerPreference mGradientColor;
     private ListPreference mThemeSwitch;
     private CustomSeekBarPreference mQsPanelAlpha;
-    private Preference mQsPanelImage;
+    private ListPreference mPanelBg;
 
     @Override
     protected String getLogTag() {
@@ -100,12 +99,20 @@ public class Themes extends DashboardFragment implements
 
 //        addPreferencesFromResource(R.xml.settings_themes);
 
+       mPanelBg = (ListPreference) findPreference(PREF_PANEL_BG);
+        int mPanelValue = getOverlayPosition(ThemesUtils.PANEL_BG_STYLE);
+        if (mPanelValue != -1) {
+                mPanelBg.setValue(String.valueOf(mPanelValue + 2));
+        } else {
+                mPanelBg.setValue("1");
+              }
+        mPanelBg.setSummary(mPanelBg.getEntry());
+        mPanelBg.setOnPreferenceChangeListener(this);
+
         mUiModeManager = getContext().getSystemService(UiModeManager.class);
 
         mOverlayService = IOverlayManager.Stub
                 .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
-
-        mQsPanelImage = findPreference(FILE_QSPANEL_SELECT);
 
         setupAccentPref();
         setupGradientPref();
@@ -255,19 +262,23 @@ public class Themes extends DashboardFragment implements
                  mOverlayService.reloadAssets("com.android.systemui", UserHandle.USER_CURRENT);
              } catch (RemoteException ignored) {
              }
+            } else if (preference == mPanelBg) {
+                String panelbg = (String) objValue;
+                int panelBgValue = Integer.parseInt(panelbg);
+                mPanelBg.setValue(String.valueOf(panelBgValue));
+                String overlayName = getOverlayName(ThemesUtils.PANEL_BG_STYLE);
+                    if (overlayName != null) {
+                        handleOverlays(overlayName, false, mOverlayService);
+                    }
+                    if (panelBgValue > 1) {
+                        LegionUtils.showSystemUiRestartDialog(getContext());
+                        handleOverlays(ThemesUtils.PANEL_BG_STYLE[panelBgValue -2],
+                                true, mOverlayService);
+    
+                }
+                mPanelBg.setSummary(mPanelBg.getEntry());
         }
         return true;
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(Preference preference) {
-        if (preference == mQsPanelImage) {
-            Intent intent = new Intent(Intent.ACTION_PICK);
-            intent.setType("image/*");
-            startActivityForResult(intent, REQUEST_PICK_IMAGE);
-            return true;
-        }
-        return super.onPreferenceTreeClick(preference);
     }
 
     private void setupAccentPref() {
@@ -334,17 +345,6 @@ public class Themes extends DashboardFragment implements
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
-        }
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent result) {
-        if (requestCode == REQUEST_PICK_IMAGE) {
-            if (resultCode != Activity.RESULT_OK) {
-                return;
-            }
-            final Uri imageUri = result.getData();
-            Settings.System.putString(getContentResolver(), Settings.System.QS_PANEL_CUSTOM_IMAGE, imageUri.toString());
         }
     }
 
