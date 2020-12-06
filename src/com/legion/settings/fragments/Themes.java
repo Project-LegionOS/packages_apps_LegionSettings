@@ -82,6 +82,7 @@ public class Themes extends DashboardFragment implements
     private ColorPickerPreference mGradientColor;
     private ListPreference mThemeSwitch;
     private CustomSeekBarPreference mQsPanelAlpha;
+    private ListPreference mPanelBg;
 
     @Override
     protected String getLogTag() {
@@ -100,6 +101,16 @@ public class Themes extends DashboardFragment implements
 //        addPreferencesFromResource(R.xml.settings_themes);
         PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+
+       mPanelBg = (ListPreference) findPreference(PREF_PANEL_BG);
+        int mPanelValue = getOverlayPosition(ThemesUtils.PANEL_BG_STYLE);
+        if (mPanelValue != -1) {
+                mPanelBg.setValue(String.valueOf(mPanelValue + 2));
+        } else {
+                mPanelBg.setValue("1");
+              }
+        mPanelBg.setSummary(mPanelBg.getEntry());
+        mPanelBg.setOnPreferenceChangeListener(this);
 
        mPanelBg = (ListPreference) findPreference(PREF_PANEL_BG);
         int mPanelValue = getOverlayPosition(ThemesUtils.PANEL_BG_STYLE);
