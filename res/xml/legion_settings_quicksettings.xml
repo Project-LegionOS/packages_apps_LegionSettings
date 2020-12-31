@@ -54,7 +54,6 @@
 
    <com.legion.settings.preferences.SystemSettingMasterSwitchPreference
             android:key="status_bar_custom_header"
-            android:icon="@drawable/ic_header"
             android:fragment="com.legion.settings.fragments.QsHeader"
             android:title="@string/status_bar_custom_header_title"
             android:summary="@string/status_bar_custom_header_summary"
