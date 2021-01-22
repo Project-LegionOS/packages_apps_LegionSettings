@@ -814,5 +814,8 @@
     <string name="switch_contained">Contained</string>
     <string name="switch_telegram">Telegram</string>
 
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_tuner_title">Lockscreen Shortcuts</string>
+    <string name="lockscreen_tuner_summary">Modify the shortcuts shown in the lockscreen</string>
 </resources>
 
