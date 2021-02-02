@@ -63,6 +63,15 @@
                         android:action="android.intent.action.VIEW"
                         android:data="https://t.me/pintos" />
             </Preference>
+
+            <Preference
+                android:title="@string/river_maintainer"
+                android:summary="@string/device_river"
+                android:icon="@drawable/ic_devs_phone" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://t.me/VitorSSSouza" />
+            </Preference>
 </PreferenceCategory>
 
 <!-- Poco Devices -->
