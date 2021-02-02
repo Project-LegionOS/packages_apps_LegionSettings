@@ -17,152 +17,164 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/maintainers_header">
 
-<PreferenceCategory
-              android:key="poco_devices"
-              android:title="@string/poco_devices" >
-
-  <Preference
-            android:title="@string/miatoll_maintainer"
-            android:summary="@string/device_miatoll"
-            android:icon="@drawable/ic_devs_phone" >
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://t.me/rajkale99" />
-        </Preference>
-
-  <Preference
-            android:title="@string/phoenix_maintainer"
-            android:summary="@string/device_phoenix"
-            android:icon="@drawable/ic_devs_phone" >
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://t.me/zoldycc" />
-        </Preference>
-   <Preference
-            android:title="@string/lmi_maintainer"
-            android:summary="@string/device_lmi"
-            android:icon="@drawable/ic_devs_phone" >
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://t.me/t6pal" />
-        </Preference>
-	</PreferenceCategory>
-	
-	
-<PreferenceCategory
-              android:key="xiaomi_devices"
-              android:title="@string/xiaomi_devices" >
-
-  <Preference
-            android:title="@string/whyred_maintainer"
-            android:summary="@string/device_whyred"
-            android:icon="@drawable/ic_devs_phone" >
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://t.me/saharenil" />
-        </Preference>
-		
-  <Preference
-            android:title="@string/ginkgo_maintainer"
-            android:summary="@string/device_ginkgo"
-            android:icon="@drawable/ic_devs_phone" >
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://t.me/VitorSSSouza" />
-        </Preference>
-
-  <Preference
-            android:title="@string/raphael_maintainer"
-            android:summary="@string/device_raphael"
-            android:icon="@drawable/ic_devs_phone" >
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://t.me/AnonymousHacker_47" />
-        </Preference>
-
-
-  <Preference
-            android:title="@string/jasmine_sprout_maintainer"
-            android:summary="@string/device_jasmine_sprout"
-            android:icon="@drawable/ic_devs_phone" >
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://t.me/Immanuel_Raj" />
-        </Preference>
-	
-  <Preference
-            android:title="@string/wayne_maintainer"
-            android:summary="@string/device_wayne"
-            android:icon="@drawable/ic_devs_phone" >
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://t.me/Lokodetoddyn" />
-        </Preference>
-
-  <Preference
-            android:title="@string/ysl_maintainer"
-            android:summary="@string/device_ysl"
-            android:icon="@drawable/ic_devs_phone" >
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://t.me/tokyo_noob" />
-        </Preference>
-        </PreferenceCategory>
-
-<PreferenceCategory
-              android:key="motorola_devices"
-              android:title="@string/motorola_devices" >
-
-  <Preference
-            android:title="@string/sanders_maintainer"
-            android:summary="@string/device_sanders"
-            android:icon="@drawable/ic_devs_phone" >
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://t.me/pintos" />
-        </Preference>
-        </PreferenceCategory>
+<!-- Asus Devices -->
 
 <PreferenceCategory
               android:key="asus_devices"
               android:title="@string/asus_devices" >
 
-  <Preference
-            android:title="@string/x01bd_maintainer"
-            android:summary="@string/device_x01bd"
-            android:icon="@drawable/ic_devs_phone" >
-            <intent
-                android:action="android.intent.action.VIEW"
-	        android:data="https://t.me/Ahmedsk786" />
-        </Preference>
-        </PreferenceCategory>
+            <Preference
+                android:title="@string/x01bd_maintainer"
+                android:summary="@string/device_x01bd"
+                android:icon="@drawable/ic_devs_phone" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+	                    android:data="https://t.me/Ahmedsk786" />
+            </Preference>
+</PreferenceCategory>
+
+<!-- Leeco Devices -->
+
+<PreferenceCategory
+              android:key="leeco_devices"
+              android:title="@string/leeco_devices" >
+
+            <Preference
+                android:title="@string/x2_maintainer"
+                android:summary="@string/device_x2"
+                android:icon="@drawable/ic_devs_phone" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+	                    android:data="https://t.me/CBG_LeMax2" />
+            </Preference>
+</PreferenceCategory>
+
+<!-- Motorola Devices -->
+
+<PreferenceCategory
+              android:key="motorola_devices"
+              android:title="@string/motorola_devices" >
+
+            <Preference
+                android:title="@string/sanders_maintainer"
+                android:summary="@string/device_sanders"
+                android:icon="@drawable/ic_devs_phone" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://t.me/pintos" />
+            </Preference>
+</PreferenceCategory>
+
+<!-- Poco Devices -->
+
+<PreferenceCategory
+              android:key="poco_devices"
+              android:title="@string/poco_devices" >
+
+            <Preference
+                android:title="@string/miatoll_maintainer"
+                android:summary="@string/device_miatoll"
+                android:icon="@drawable/ic_devs_phone" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://t.me/rajkale99" />
+            </Preference>
+
+            <Preference
+                android:title="@string/phoenix_maintainer"
+                android:summary="@string/device_phoenix"
+                android:icon="@drawable/ic_devs_phone" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://t.me/zoldycc" />
+            </Preference>
+ 
+            <Preference
+                android:title="@string/lmi_maintainer"
+                android:summary="@string/device_lmi"
+                android:icon="@drawable/ic_devs_phone" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://t.me/t6pal" />
+            </Preference>
+</PreferenceCategory>
+	
+<!-- Realme Devices -->
 
 <PreferenceCategory
               android:key="realme_devices"
               android:title="@string/realme_devices" >
 
-  <Preference
-            android:title="@string/RMX1971_maintainer"
-            android:summary="@string/device_RMX1971"
-            android:icon="@drawable/ic_devs_phone" >
-            <intent
-                android:action="android.intent.action.VIEW"
-	        android:data="https://t.me/LuckyVii" />
-        </Preference>
-        </PreferenceCategory>
+            <Preference
+                android:title="@string/RMX1971_maintainer"
+                android:summary="@string/device_RMX1971"
+                android:icon="@drawable/ic_devs_phone" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+	                    android:data="https://t.me/LuckyVii" />
+            </Preference>
+</PreferenceCategory>
 	
-<PreferenceCategory
-              android:key="leeco_devices"
-              android:title="@string/leeco_devices" >
+<!-- Xiaomi Devices -->
 
-  <Preference
-            android:title="@string/x2_maintainer"
-            android:summary="@string/device_x2"
-            android:icon="@drawable/ic_devs_phone" >
-            <intent
-                android:action="android.intent.action.VIEW"
-	        android:data="https://t.me/CBG_LeMax2" />
-        </Preference>
-        </PreferenceCategory>
+<PreferenceCategory
+              android:key="xiaomi_devices"
+              android:title="@string/xiaomi_devices" >
+
+            <Preference
+                android:title="@string/whyred_maintainer"
+                android:summary="@string/device_whyred"
+                android:icon="@drawable/ic_devs_phone" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://t.me/saharenil" />
+            </Preference>
+		
+            <Preference
+                android:title="@string/ginkgo_maintainer"
+                android:summary="@string/device_ginkgo"
+                android:icon="@drawable/ic_devs_phone" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://t.me/VitorSSSouza" />
+            </Preference>
+
+            <Preference
+                android:title="@string/raphael_maintainer"
+                android:summary="@string/device_raphael"
+                android:icon="@drawable/ic_devs_phone" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://t.me/AnonymousHacker_47" />
+            </Preference>
+
+
+            <Preference
+                android:title="@string/jasmine_sprout_maintainer"
+                android:summary="@string/device_jasmine_sprout"
+                android:icon="@drawable/ic_devs_phone" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://t.me/Immanuel_Raj" />
+            </Preference>
+	
+            <Preference
+                android:title="@string/wayne_maintainer"
+                android:summary="@string/device_wayne"
+                android:icon="@drawable/ic_devs_phone" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://t.me/Lokodetoddyn" />
+            </Preference>
+
+            <Preference
+                android:title="@string/ysl_maintainer"
+                android:summary="@string/device_ysl"
+                android:icon="@drawable/ic_devs_phone" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://t.me/tokyo_noob" />
+            </Preference>
+</PreferenceCategory>
 
 </PreferenceScreen>

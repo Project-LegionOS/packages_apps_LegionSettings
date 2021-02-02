@@ -1,37 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-   <!-- Device Categories -->
-   <string name="xiaomi_devices">Xiaomi</string>
-
-   <!-- Xiaomi Device maintainers -->
-   <string name="device_whyred">Xiaomi Redmi Note 5 (whyred)</string>
-   <string name="whyred_maintainer">BabaSahare</string>
- 
-    <!-- Xiaomi Device maintainers -->
-   <string name="device_ginkgo">Xiaomi Redmi Note 8 (ginkgo)</string>
-   <string name="ginkgo_maintainer">VitorSSSouza</string>
- 
-   <string name="device_raphael">Redmi K20 pro (raphael)</string>
-   <string name="raphael_maintainer">Bilal(anonhacker)</string>
-
-   <string name="device_jasmine_sprout">Xiaomi MiA2 (jasmine_sprout)</string>
-   <string name="jasmine_sprout_maintainer">Immanuel Raj</string>
-   
-   <string name="device_wayne">Xiaomi Mi6x (wayne)</string>
-   <string name="wayne_maintainer">Roger</string>
-
-   <string name="device_ysl">Redmi s2/y2 (ysl)</string>
-   <string name="ysl_maintainer">Dinesh</string>
-
-   <!-- Device Categories -->
+   <!-- Asus Devices -->
    <string name="asus_devices">Asus</string>
 
    <!-- Asus Device maintainers -->
    <string name="device_x01bd">Asus Max Pro M2 (X01BD)</string>
    <string name="x01bd_maintainer">Ahmed shaikh</string>
 
-   <!-- Device Categories -->
+   <!-- Leeco Devices -->
+   <string name="leeco_devices">LeEco</string>
+
+   <!-- Leeco LeMax2 Device maintainer -->
+   <string name="device_x2">LeEco LeMax2 (x2)</string>
+   <string name="x2_maintainer">CrisBalGreece</string>
+
+   <!-- Motorola Devices -->
+   <string name="motorola_devices">Motorola(Moto)</string>
+
+   <!-- Motorola Device maintainers -->
+   <string name="device_sanders">Moto G5 (S) Plus (sanders)</string>
+   <string name="sanders_maintainer">Lucas Ponez</string>
+
+   <!-- Poco Devices -->
    <string name="poco_devices">Poco</string>
 
    <!-- Poco Device maintainers -->
@@ -44,25 +35,27 @@
    <string name="device_lmi">Poco F2 Pro (lmi)</string>
    <string name="lmi_maintainer">AbdullahPS</string>
 
-   <!-- Device Categories -->
-   <string name="motorola_devices">Motorola</string>
-
-   <!-- Motorola Device maintainers -->
-   <string name="device_sanders">Moto G5 (S) Plus (sanders)</string>
-   <string name="sanders_maintainer">Lucas Ponez</string>
-
-   <!-- Device Categories -->
-   <string name="realme_devices">realme</string>
+   <!-- Realme Devices -->
+   <string name="realme_devices">Realme</string>
 
    <!-- Realme Device maintainers -->
    <string name="device_RMX1971">Realme 5 Pro (RMX1971)</string>
    <string name="RMX1971_maintainer">LuckYVii</string>
-   
-   <!-- Device Categories -->
-   <string name="leeco_devices">LeEco</string>
 
-   <!-- Realme Device maintainers -->
-   <string name="device_x2">LeEco LeMax2 (x2)</string>
-   <string name="x2_maintainer">CrisBalGreece</string>
+   <!-- Xiaomi Devices -->
+   <string name="xiaomi_devices">Xiaomi</string>
+
+   <!-- Xiaomi Device maintainers -->
+   <string name="device_whyred">Xiaomi Redmi Note 5 (whyred)</string>
+   <string name="whyred_maintainer">BabaSahare</string>
+ 
+   <string name="device_raphael">Redmi K20 pro (raphael)</string>
+   <string name="raphael_maintainer">Bilal(anonhacker)</string>
+
+   <string name="device_jasmine_sprout">Xiaomi MiA2 (jasmine_sprout)</string>
+   <string name="jasmine_sprout_maintainer">Immanuel Raj</string>
+
+   <string name="device_ysl">Redmi s2/y2 (ysl)</string>
+   <string name="ysl_maintainer">Dinesh</string> 
 
 </resources>
