@@ -140,15 +140,6 @@
             </Preference>
 		
             <Preference
-                android:title="@string/ginkgo_maintainer"
-                android:summary="@string/device_ginkgo"
-                android:icon="@drawable/ic_devs_phone" >
-                    <intent
-                        android:action="android.intent.action.VIEW"
-                        android:data="https://t.me/VitorSSSouza" />
-            </Preference>
-
-            <Preference
                 android:title="@string/raphael_maintainer"
                 android:summary="@string/device_raphael"
                 android:icon="@drawable/ic_devs_phone" >
@@ -167,15 +158,6 @@
                         android:data="https://t.me/Immanuel_Raj" />
             </Preference>
 	
-            <Preference
-                android:title="@string/wayne_maintainer"
-                android:summary="@string/device_wayne"
-                android:icon="@drawable/ic_devs_phone" >
-                    <intent
-                        android:action="android.intent.action.VIEW"
-                        android:data="https://t.me/Lokodetoddyn" />
-            </Preference>
-
             <Preference
                 android:title="@string/ysl_maintainer"
                 android:summary="@string/device_ysl"
