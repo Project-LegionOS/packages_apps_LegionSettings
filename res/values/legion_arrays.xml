@@ -616,18 +616,6 @@
         <item>5</item>
     </string-array>
 
-    <string-array name="qs_show_brightness_slider_entries" translatable="false">
-        <item>@string/qs_show_brightness_slider_show_never</item>
-        <item>@string/qs_show_brightness_slider_show_expanded</item>
-        <item>@string/qs_show_brightness_slider_show_always</item>
-    </string-array>
-
-    <string-array name="qs_show_brightness_slider_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
     <!-- Statusbar Clock -->
     <string-array name="status_bar_clock_pos_entries" translatable="false">
         <item>@string/status_bar_clock_pos_left</item>
