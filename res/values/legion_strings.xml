@@ -112,9 +112,6 @@
     <string name="statusbar_tuner_title">Statusbar Items</string>
     <string name="statusbar_tuner_summary">Select which statusbar icons to disable</string>
 
-    <!-- Navbar tuner -->
-    <string name="navbar_tuner_title">Navbar Tuner</string>
-
     <string name="torch_long_press_power_gesture_title">Screen off power button torch</string>
     <string name="torch_long_press_power_gesture_desc">Long press power button while the screen is off to turn on the flashlight</string>
     <string name="torch_long_press_power_timeout_title">Automatically turn torch off</string>
@@ -820,16 +817,23 @@
     <string name="lockscreen_tuner_summary">Modify the shortcuts shown in the lockscreen</string>
 
     <!-- Navbar options -->
-    <string name="navbar_invert_layout_title">Invert layout</string>
-
-    <!-- Navbar options -->
-    <string name="nav_bar_tuner_title">Navigation bar tuner</string>
-    <string name="nav_bar_tuner_summary">Change navbar layout</string>
     <string name="navigation_bar_title">Navigation bar</string>
     <string name="system_navigation_summary">Choose which system navigation style to use</string>
 
     <string name="navbar_visibility">Nav Bar</string>
     <string name="navbar_vis_summary">Enable-disable navigation bar</string>
+
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Pixel animation</string>
+    <string name="pixel_navbar_anim_summary">Toggle home button animation</string>
+
+    <!-- Navbar options -->
+    <string name="navbar_invert_layout_title">Invert layout</string>
+    <string name="navbar_layout_title">Layout</string>
+    <string name="navbar_layout_normal">Normal</string>
+    <string name="navbar_layout_compact">Compact</string>
+    <string name="navbar_layout_leftleaning">Left-leaning</string>
+    <string name="navbar_layout_rightleaning">Right-leaning</string>
 
     <!-- QS Header data uasge -->
     <string name="qs_datausage_title">Data usage in QS Header</string>

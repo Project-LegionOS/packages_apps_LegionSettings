@@ -18,6 +18,10 @@
     android:title="@string/navbar_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+        android:key="navbar_key"
+        android:title="@string/navigation_bar_title">
+
     <SwitchPreference
         android:key="navbar_visibility"
         android:title="@string/navbar_visibility"
@@ -29,6 +33,7 @@
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
         settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" />
 
+<!--
         <Preference
             android:key="nav_bar_tuner"
             android:title="@string/nav_bar_tuner_title"
@@ -38,8 +43,26 @@
                 android:targetClass="com.android.systemui.tuner.NavBarActivity" />
         </Preference>
 
-    <com.legion.settings.preferences.SecureSettingSwitchPreference
-        android:key="sysui_nav_bar_inverse"
-        android:title="@string/navbar_invert_layout_title"
-        android:defaultValue="true" />
+-->
+        <com.legion.settings.preferences.SecureSettingListPreference
+            android:key="navbar_layout_views"
+            android:title="@string/navbar_layout_title"
+            android:summary="%s"
+            android:entries="@array/navbar_layout_entries"
+            android:entryValues="@array/navbar_layout_values"
+            android:defaultValue="default"
+            android:dependency="navbar_visibility" />
+
+        <com.legion.settings.preferences.SecureSettingSwitchPreference
+            android:key="navbar_inverse_layout"
+            android:title="@string/navbar_invert_layout_title"
+            android:defaultValue="false"
+            android:dependency="navbar_visibility" />
+
+        <com.legion.settings.preferences.SystemSettingSwitchPreference
+            android:key="pixel_nav_animation"
+            android:title="@string/pixel_navbar_anim_title"
+            android:summary="@string/pixel_navbar_anim_summary"
+            android:defaultValue="true"
+            android:dependency="navbar_visibility" />
 </PreferenceScreen>

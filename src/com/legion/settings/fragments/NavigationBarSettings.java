@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 TeamEos
+ * Copyright (C) 2019-2021 LegionOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,74 +16,97 @@
 
 package com.legion.settings.fragments;
 
-import java.util.ArrayList;
-
+import android.app.ActivityManager;
 import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
+import android.app.Fragment;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.DialogInterface;
-import android.content.DialogInterface.OnClickListener;
-import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.UserHandle;
 import android.os.Vibrator;
-import androidx.preference.ListPreference;
-import androidx.preference.Preference;
-import androidx.preference.PreferenceCategory;
-import androidx.preference.PreferenceFragment;
-import androidx.preference.PreferenceManager;
-import androidx.preference.SwitchPreference;
-import androidx.preference.PreferenceScreen;
-import androidx.preference.Preference.OnPreferenceChangeListener;
-import com.android.settings.gestures.SystemNavigationGestureSettings;
 import android.provider.Settings;
 
-import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.MetricsLogger;
-import com.android.internal.logging.nano.MetricsProto;
+import androidx.preference.ListPreference;
+import androidx.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreference;
+
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.util.legion.LegionUtils;
-
-import com.legion.settings.preferences.SystemSettingSwitchPreference;
-
 import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.search.BaseSearchIndexProvider;
 
-import com.android.internal.util.hwkeys.ActionUtils;
+import com.legion.settings.preference.SystemSettingSwitchPreference;
 
-public class NavigationBarSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+import java.util.ArrayList;
+import java.util.List;
 
+public class NavigationSettings extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
+
+    private static final String GESTURE_SYSTEM_NAVIGATION = "gesture_system_navigation";
+    private static final String LAYOUT_SETTINGS = "navbar_layout_views";
     private static final String NAVBAR_VISIBILITY = "navbar_visibility";
+    private static final String NAVIGATION_BAR_INVERSE = "navbar_inverse_layout";
+    private static final String PIXEL_NAV_ANIMATION = "pixel_nav_animation";
 
+    private Preference mGestureSystemNavigation;
+    private Preference mLayoutSettings;
     private SwitchPreference mNavbarVisibility;
+    private SwitchPreference mSwapNavButtons;
+    private SystemSettingSwitchPreference mPixelNavAnimation;
 
     private boolean mIsNavSwitchingMode = false;
     private Handler mHandler;
 
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.legion_settings_navigation);
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
+        mGestureSystemNavigation = findPreference(GESTURE_SYSTEM_NAVIGATION);
+        mPixelNavAnimation = findPreference(PIXEL_NAV_ANIMATION);
+        mLayoutSettings = findPreference(LAYOUT_SETTINGS);
+        mSwapNavButtons = findPreference(NAVIGATION_BAR_INVERSE);
+
+        // On three button nav
+        if (LegionUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
+            mGestureSystemNavigation.setSummary(getString(R.string.legacy_navigation_title));
+            mPixelNavAnimation.setSummary(getString(R.string.pixel_navbar_anim_summary));
+        // On gesture nav
+        } else {
+            mGestureSystemNavigation.setSummary(getString(R.string.edge_to_edge_navigation_title));
+            mLayoutSettings.setSummary(getString(R.string.unsupported_gestures));
+            mPixelNavAnimation.setSummary(getString(R.string.unsupported_gestures));
+            mSwapNavButtons.setSummary(getString(R.string.unsupported_gestures));
+            mLayoutSettings.setEnabled(false);
+            mPixelNavAnimation.setEnabled(false);
+            mSwapNavButtons.setEnabled(false);
+        }
+
         mNavbarVisibility = (SwitchPreference) findPreference(NAVBAR_VISIBILITY);
 
+        boolean defaultToNavigationBar = LegionUtils.deviceSupportNavigationBar(getActivity());
         boolean showing = Settings.System.getInt(getContentResolver(),
                 Settings.System.FORCE_SHOW_NAVBAR,
-                ActionUtils.hasNavbarByDefault(getActivity()) ? 1 : 0) != 0;
+                defaultToNavigationBar ? 1 : 0) != 0;
         updateBarVisibleAndUpdatePrefs(showing);
         mNavbarVisibility.setOnPreferenceChangeListener(this);
 
         mHandler = new Handler();
     }
 
-
-    private void updateBarVisibleAndUpdatePrefs(boolean showing) {
-        mNavbarVisibility.setChecked(showing);
-    }
-
-
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        ContentResolver resolver = getActivity().getContentResolver();
         if (preference.equals(mNavbarVisibility)) {
             if (mIsNavSwitchingMode) {
                 return false;
@@ -104,8 +127,19 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
         return false;
     }
 
+    private void updateBarVisibleAndUpdatePrefs(boolean showing) {
+        mNavbarVisibility.setChecked(showing);
+    }
+
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.LEGION_SETTINGS;
+        return MetricsEvent.LEGION_SETTINGS;
     }
+
+    /**
+     * For Search.
+     */
+
+    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider(R.xml.legion_settings_navigation);
 }
