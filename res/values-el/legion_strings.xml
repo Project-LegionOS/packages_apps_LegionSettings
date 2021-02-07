@@ -802,26 +802,6 @@
     <string name="qs_header_clock_font_size_title">Μέγεθος φόντου γρήγ. ρυθμίσεων κεφαλίδας QS</string>
     <string name="qs_clock_title">Ρολόι κεφαλίδας QS</string>
 
-    <!-- QS tile styles -->
-    <string name="qs_tile_style_title">Στυλ πλακιδίων γρηγ. ρυθμίσεων QS</string>
-    <string name="qstile_default">Προεπιλογή</string>
-    <string name="qstile_circle_trim">Κύκλος με trim</string>
-    <string name="qstile_dual_tone_circle">Διπλός με τριμ</string>
-    <string name="qstile_wavey">Wavey</string>
-    <string name="qstile_pokesign">Pokesign</string>
-    <string name="qstile_ninja">Ninja</string>
-    <string name="qstile_dottedcircle">Κύκλος με κουκίδες</string>
-    <string name="qstile_attemptmountain">Σαν το βουνό</string>
-    <string name="qstile_squaremedo">Το Squaremedo</string>
-    <string name="qstile_inkdrop">Μελάνι</string>
-    <string name="qstile_cookie">Μπισκότο</string>
-    <string name="qstile_circleoutline">Εξωτερικός κύκλος</string>
-    <string name="qstile_cosmos">Κόσμος Shishu</string>
-    <string name="qstile_divided">Διαχωρισμένος κύκλος</string>
-    <string name="qstile_neonlike">Τύπου Neon</string>
-    <string name="qstile_oos">Οξυγόνο</string>
-    <string name="qstile_triangles">Τρίαινα</string>
-
     <!-- Switch styles -->
     <string name="switch_style_title">Τύπος εμφαν. διακόπτη</string>
     <string name="switch_default">Προεπιλογή συστήματος</string>
