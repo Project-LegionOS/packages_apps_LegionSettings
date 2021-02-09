@@ -65,4 +65,6 @@
             android:summary="@string/pixel_navbar_anim_summary"
             android:defaultValue="true"
             android:dependency="navbar_visibility" />
+     </PreferenceCategory>  
+         
 </PreferenceScreen>
