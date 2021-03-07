@@ -29,6 +29,9 @@
    <string name="device_river">Moto G7 (river)</string>
    <string name="river_maintainer">VitorSSSouza</string>
 
+   <string name="device_ocean">Moto G7 Power (ocean)</string>
+   <string name="ocean_maintainer">VitorSSSouza</string>
+
    <!-- Poco Devices -->
    <string name="poco_devices">Poco</string>
 
