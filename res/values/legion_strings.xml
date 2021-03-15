@@ -844,6 +844,7 @@
     <string name="panel_batik">Batik</string>
     <string name="panel_kece">Kece</string>
     <string name="panel_outline">Outline</string>
+    <string name="panel_outline">Legion Outline</string>
 
     <!-- QS header styles -->
     <string name="qs_header_style_title">QS Header style</string>
