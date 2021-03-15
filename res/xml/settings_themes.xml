@@ -81,36 +81,6 @@
 	android:key="qs_category" 
         android:title="@string/qs_themes_category_title" > 
 
-        <com.legion.settings.preferences.SystemSettingListPreference
-            android:key="qs_panel_bg_use_new_tint" 
-            android:title="@string/qs_bg_use_new_tint" 
-            android:dialogTitle="@string/qs_bg_use_new_tint" 
-            android:entries="@array/qs_tint_entries" 
-            android:entryValues="@array/qs_tint_values" 
-            android:summary="%s"
-	    android:defaultValue="1" />
-
-        <com.legion.settings.preferences.SystemSettingListPreference
-            android:key="qs_label_use_new_tint" 
-            android:title="@string/qs_label_use_new_tint" 
-            android:dialogTitle="@string/qs_label_use_new_tint" 
-            android:entries="@array/qs__label_tint_entries" 
-            android:entryValues="@array/qs_label_tint_values" 
-            android:summary="%s"
-	    android:defaultValue="1" />
-
-        <com.legion.settings.preferences.SystemSettingSwitchPreference 
-            android:key="qs_tile_icon_primary" 
-            android:title="@string/qs_icon_primary_title" 
-            android:summary="@string/qs_icon_primary_summary" 
-            android:defaultValue="false" />
-
-        <com.legion.settings.preferences.SystemSettingSwitchPreference
-            android:key="qs_new_bg_enabled"
-            android:title="@string/qs_new_bg_title"
-            android:summary="@string/qs_new_bg_summary"
-            android:defaultValue="false" />
-
         <com.legion.settings.preferences.CustomSeekBarPreference
             android:key="qs_panel_alpha"
             android:title="@string/qs_panel_alpha_title"
@@ -119,27 +89,6 @@
             settings:min="0"
             android:defaultValue="100"
             android:persistent="false" />
-
-<!--       <com.legion.settings.preferences.SystemSettingSwitchPreference
-           android:key="qs_panel_type_background"
-           android:title="@string/qs_bg_type_title"
-           android:summary="@string/qs_bg_type_summary"
-           android:defaultValue="false" />
-
-       <Preference
-           android:key="file_qspanel_select"
-           android:title="@string/file_header_select_title"
-           android:summary="@string/file_header_select_summary"
-           android:dependency="qs_panel_type_background"
-           android:persistent="false" >
-       </Preference>
-
-       <com.legion.settings.preferences.SystemSettingSwitchPreference
-           android:key="qs_panel_custom_image_blur"
-           android:title="@string/qs_bg_blur_image_title"
-           android:summary="@string/qs_bg_blur_image_summary"
-           android:dependency="qs_panel_type_background"
-           android:defaultValue="false" /> -->
 
     </PreferenceCategory>
 </PreferenceScreen>

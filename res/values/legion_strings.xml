@@ -247,21 +247,7 @@
 
     <!-- AOKP custom system animations -->
     <string name="animation_title">Animations</string>  
-   <!-- <string name="system_animation_title">System Animations</string>
-    <string name="activity_open_title">Activity open animation</string>
-    <string name="activity_close_title">Activity close animation</string>
-    <string name="task_open_title">Task open animation</string>
-    <string name="task_open_behind_title">Task open behind animation</string>
-    <string name="task_close_title">Task close animation</string>
-    <string name="task_move_to_front_title">Move to front animation</string>
-    <string name="task_move_to_back_title">Move to back animation</string>
-    <string name="wallpaper_open_title">Wallpaper open animation</string>
-    <string name="wallpaper_close_title">Wallpaper close animation</string>
-    <string name="wallpaper_intra_open_title">Wallpaper intra open animation</string>
-    <string name="wallpaper_intra_close_title">Wallpaper intra close animation</string>
-    <string name="animation_duration_title">Animation duration</string>
-    <string name="animation_duration_default">Default</string>
--->
+
     <!-- Toast Animation -->
     <string name="toast_animation_title">Toast animation</string>
     <string name="toast_none_animation">None</string>
@@ -501,25 +487,6 @@
     <string name="lockscreen_weather_alignment_title">LS Weather Alignment</string>
     <string name="lockscreen_weather_selection_title">WeatherView Background Style</string>
 
-    <!-- QS BG Tint -->
-    <string name="qs_themes_category_title">QS Themes</string> 
-    <string name="qs_bg_use_new_tint">Tint QS Tile</string> 
-    <string name="qs_bg_use_new_tint_summary">Use accent color for qs tile icons and background</string>
-    <string name="qs_tint_off">Gradient Effect</string>
-    <string name="qs_tint_random">Random Color</string>
-    <string name="qs_tint_accent">Accent Color</string>
-
-    <!-- QS Label Tint -->
-    <string name="qs_label_use_new_tint">QS Label Tint</string> 
-    <string name="qs_label_tint_off">Default</string> 
-    <string name="qs_label_tint_random">Random Color Tint</string>
-    <string name="qs_label_tint_accent">Accent Color Tint</string> 
-    <string name="qs_label_tint_gradient">Gradient Color Tint</string>
-
-    <!-- Qs Tile Icon Bright-Dark -->
-    <string name="qs_icon_primary_title">Qs Tile Icon Bright|Dark</string>
-    <string name="qs_icon_primary_summary">Make Qs Icon Bright-Dark if gradient tint enabled</string>
-
     <!-- HW Keys customization -->
     <string name="action_value_default_action" translatable="false">default</string>
     <string name="action_value_select_app" translatable="false">app</string>
@@ -691,10 +658,6 @@
     <string name="lock_weather_city_font_summary">Change the default font of the lockscreen weather city</string>
     <string name="lock_weather_city_dialog_title">Select lock weather city font</string>
 
-    <!-- Gradient Panel QS Bg -->
-    <string name="qs_new_bg_title">Gradient Qs Background</string>
-    <string name="qs_new_bg_summary">Whether to enable gradient based qs panel background</string>
-
     <!-- Power menu on lockscreen -->
     <string name="power_menu_hide_on_secure_title">Hide on lockscreen</string>
     <string name="power_menu_hide_on_secure_summary">Hides the global actions menu on secure lockscreen</string>
@@ -723,14 +686,6 @@
     <!-- QuickSettings Panel Transparency -->
     <string name="qs_panel_alpha_title">Quick Settings opacity</string>
     <string name="qs_panel_alpha_summary">Configure opacity of background</string>
-
-    <!-- QS Themes Type Background -->
-    <string name="qs_bg_type_title">QS Panel Background</string>
-    <string name="qs_bg_type_summary">Enable custom qs background</string>
-    <string name="qs_bg_blur_image_title">Blur Image</string>
-    <string name="qs_bg_blur_image_summary">Blur Custom Image</string>
-    <string name="file_header_select_title">Select local image</string>
-    <string name="file_header_select_summary">Select image from storage</string>
 
     <!-- Battery Styles -->
     <string name="battery_percent_title">Statusbar battery indicator</string>
