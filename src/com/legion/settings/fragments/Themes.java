@@ -3,7 +3,6 @@ package com.legion.settings.fragments;
 import com.android.internal.logging.nano.MetricsProto;
 
 import static android.os.UserHandle.USER_SYSTEM;
-import static com.legion.settings.utils.Utils.handleOverlays;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -13,7 +12,6 @@ import android.app.UiModeManager;
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.DialogInterface;
-import android.content.pm.ResolveInfo;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.content.om.IOverlayManager;
@@ -64,7 +62,6 @@ public class Themes extends DashboardFragment implements
         OnPreferenceChangeListener, Indexable {
 
     private static final String TAG = "Themes";
-    private static final String PREF_PANEL_BG = "panel_bg";
     private static final String QS_HEADER_STYLE = "qs_header_style";
     private static final String QS_TILE_STYLE = "qs_tile_style";
     private static final String ACCENT_COLOR = "accent_color";
@@ -84,7 +81,6 @@ public class Themes extends DashboardFragment implements
     private ColorPickerPreference mGradientColor;
     private ListPreference mThemeSwitch;
     private CustomSeekBarPreference mQsPanelAlpha;
-    private ListPreference mPanelBg;
     private ListPreference mQsHeaderStyle;
     private ListPreference mQsTileStyle;
 
@@ -103,20 +99,8 @@ public class Themes extends DashboardFragment implements
         super.onCreate(icicle);
 
 //        addPreferencesFromResource(R.xml.settings_themes);
-
-       @Override
-       public boolean onPreferenceChange(Preference preference, Object newValue) {
-
-       mPanelBg = (ListPreference) findPreference(PREF_PANEL_BG);
-        int mPanelValue = getOverlayPosition(ThemesUtils.PANEL_BG_STYLE);
-        if (mPanelValue != -1) {
-                mPanelBg.setValue(String.valueOf(mPanelValue + 2));
-        } else {
-                mPanelBg.setValue("1");
-              }
-        mPanelBg.setSummary(mPanelBg.getEntry());
-        mPanelBg.setOnPreferenceChangeListener(this);
-    }
+        PreferenceScreen prefScreen = getPreferenceScreen();
+        ContentResolver resolver = getActivity().getContentResolver();
 
         mQsHeaderStyle = (ListPreference)findPreference(QS_HEADER_STYLE);
         int qsHeaderStyle = Settings.System.getInt(resolver,
@@ -169,7 +153,7 @@ public class Themes extends DashboardFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        ContentResolver resolver = getActivity().getContentResolver();
+	ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mThemeColor) {
             int color = (Integer) objValue;
             String hexColor = String.format("%08X", (0xFFFFFFFF & color));
@@ -288,21 +272,6 @@ public class Themes extends DashboardFragment implements
                  mOverlayService.reloadAssets("com.android.systemui", UserHandle.USER_CURRENT);
              } catch (RemoteException ignored) {
              }
-            } else if (preference == mPanelBg) {
-                String panelbg = (String) objValue;
-                int panelBgValue = Integer.parseInt(panelbg);
-                mPanelBg.setValue(String.valueOf(panelBgValue));
-                String overlayName = getOverlayName(ThemesUtils.PANEL_BG_STYLE);
-                    if (overlayName != null) {
-                        handleOverlays(overlayName, false, mOverlayService);
-                    }
-                    if (panelBgValue > 1) {
-                        LegionUtils.showSystemUiRestartDialog(getContext());
-                        handleOverlays(ThemesUtils.PANEL_BG_STYLE[panelBgValue -2],
-                                true, mOverlayService);
-    
-                }
-                mPanelBg.setSummary(mPanelBg.getEntry());
             } else if (preference == mQsHeaderStyle) {
                 String value = (String) objValue;
                 Settings.System.putInt(resolver,
@@ -444,28 +413,6 @@ public class Themes extends DashboardFragment implements
     @Override
     public void onResume() {
         super.onResume();
-    }
-
-    private String getOverlayName(String[] overlays) {
-        String overlayName = null;
-        for (int i = 0; i < overlays.length; i++) {
-            String overlay = overlays[i];
-            if (LegionUtils.isThemeEnabled(overlay)) {
-                overlayName = overlay;
-            }
-        }
-        return overlayName;
-    }
-
-    private int getOverlayPosition(String[] overlays) {
-        int position = -1;
-        for (int i = 0; i < overlays.length; i++) {
-            String overlay = overlays[i];
-            if (LegionUtils.isThemeEnabled(overlay)) {
-                position = i;
-            }
-        }
-        return position;
     }
 
     @Override
