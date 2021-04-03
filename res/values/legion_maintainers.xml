@@ -45,6 +45,9 @@
    <string name="device_lmi">Poco F2 Pro (lmi)</string>
    <string name="lmi_maintainer">AbdullahPS</string>
 
+   <string name="device_surya">Poco X3 (surya)</string>
+   <string name="surya_maintainer">AmJith Babu</string>
+
    <!-- Realme Devices -->
    <string name="realme_devices">Realme</string>
 

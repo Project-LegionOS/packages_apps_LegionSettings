@@ -116,6 +116,16 @@
                         android:action="android.intent.action.VIEW"
                         android:data="https://t.me/t6pal" />
             </Preference>
+
+            <Preference
+                android:title="@string/surya_maintainer"
+                android:summary="@string/device_surya"
+                android:icon="@drawable/ic_devs_phone" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://t.me/TheMarc43" />
+            </Preference>
+
 </PreferenceCategory>
 	
 <!-- Realme Devices -->
