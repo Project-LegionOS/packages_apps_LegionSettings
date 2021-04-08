@@ -52,6 +52,8 @@
    <string name="realme_devices">Realme</string>
 
    <!-- Realme Device maintainers -->
+   <string name="device_RMX1921">Realme XT (RMX1921)</string>
+   <string name="RMX1921_maintainer">ThatisJigen</string>
    <string name="device_RMX1971">Realme 5 Pro (RMX1971)</string>
    <string name="RMX1971_maintainer">LuckYVii</string>
 

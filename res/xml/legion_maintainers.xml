@@ -142,6 +142,15 @@
                         android:action="android.intent.action.VIEW"
 	                    android:data="https://t.me/LuckyVii" />
             </Preference>
+
+            <Preference
+                android:title="@string/RMX1921_maintainer"
+                android:summary="@string/device_RMX1921"
+                android:icon="@drawable/ic_devs_phone" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+	                    android:data="https://t.me/jigen_was_here" />
+            </Preference>
 </PreferenceCategory>
 	
 <!-- Xiaomi Devices -->
