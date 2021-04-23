@@ -8,10 +8,6 @@
    <string name="device_x01bd">Asus Max Pro M2 (X01BD)</string>
    <string name="x01bd_maintainer">Ahmed shaikh</string>
 
-   <string name="device_X00TD">Asus Max Pro M1 (X00TD)</string>
-   <string name="X00TD_maintainer">Paras Dhiman</string>
-
-
    <!-- Leeco Devices -->
    <string name="leeco_devices">LeEco</string>
 

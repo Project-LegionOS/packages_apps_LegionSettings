@@ -32,14 +32,6 @@
 	                    android:data="https://t.me/Ahmedsk786" />
             </Preference>
 
-            <Preference
-                android:title="@string/X00TD_maintainer"
-                android:summary="@string/device_X00TD"
-                android:icon="@drawable/ic_devs_phone" >
-                    <intent
-                        android:action="android.intent.action.VIEW"
-                        android:data="https://t.me/Ken_kaneki_69" />
-            </Preference>
 
 </PreferenceCategory>
 
