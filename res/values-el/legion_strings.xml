@@ -54,6 +54,9 @@
     <string name="reset">Επαναφορά</string>
     <string name="cancel">Άκυρο</string>
     <string name="save">Αποθήκευση</string>
+	
+    <!-- Footer -->
+    <string name="qs_settings_footer">Ελέγξτε την κατηγορία θεμάτων, για περισσότερα θέματα των γρήγορων ρυθμίσεων.</string>
 
     <!-- Themes -->
     <string name="theme_type_title">Σκούρα θέματα</string>
@@ -118,7 +121,7 @@
     <string name="torch_long_press_power_timeout_5min">5 λεπτά</string>
     <string name="torch_long_press_power_timeout_10min">10 λεπτά</string>
 	
-	<!-- Flash on calls -->
+    <!-- Flash on calls -->
     <string name="flash_on_call_category">Παλμός φλας</string>
     <string name="flash_on_call_title">Παλμός φλας σε εισερχόμενη κλήση</string>
     <string name="flash_on_call_delay_title">Ρυθμός ανανέωσης παλμού</string>
@@ -154,7 +157,7 @@
     <string name="incall_vibrate_call_wait_title">Δόνηση σε αναμονή κλήσεων</string>
     <string name="incall_vibrate_disconnect_title">Δόνηση σε αποσύνδεση</string>
 	
-	<!-- Power button -->
+    <!-- Power button -->
     <string name="power_button_category_title">Πλήκτρο ενέργειας</string>
 
     <!-- Global Actions -->
@@ -438,7 +441,7 @@
     <string name="lockscreen_weather_icon_color">Χρώμα εικονιδίου καιρού</string>
     <string name="yes">ΝΑΙ</string>
 
-   <!-- LS OwnerInfo Font & Size -->
+    <!-- LS OwnerInfo Font & Size -->
     <string name="lock_ownerinfo_font_title">Επιλογές γραμματοσειράς κατόχου</string>
     <string name="lock_ownerinfo_font_summary">Αλλάξτε την προεπιλεγμένη γραμματοσειρά των πληροφοριών κατόχου της οθόνης κλειδώματος</string>
     <string name="lock_ownerinfo_font_dialog_title">Επιλέξτε τη γραμματοσειρά κλειδώματος κατόχου</string>
@@ -486,7 +489,7 @@
     <string name="lockscreen_weather_alignment_title">Οθόν.κλειδ. θέση καιρού</string>
     <string name="lockscreen_weather_selection_title">Εμφάνιση στυλ υποβάθρου καιρού</string>
 	
-	<!-- HW Keys customization -->
+    <!-- HW Keys customization -->
     <string name="picker_activities">Διεργασίες</string>
     <string name="select_custom_app_title">Επιλογή άλλης εφαρμογής</string>
     <string name="select_custom_activity_title">Επιλογή άλλης διεργασίας</string>
@@ -521,7 +524,7 @@
     <string name="backlight_timeout_20s">20 δευτ.</string>
     <string name="backlight_timeout_30s">30 δευτ.</string>
 	
-	<!-- Accent QS tint -->
+    <!-- Accent QS tint -->
     <string name="qs_bg_use_new_tint">Απόχρωση πλακιδίου γρηγ. ρυθμίσεων</string>
     <string name="qs_bg_use_new_tint_summary">Επίλεξε το στυλ απόχρωσης του πλακιδίου</string>
     <string name="qs_tint_off">Προεπιλογή</string>
@@ -603,7 +606,7 @@
     <string name="network_traffic_layout_v">Κάθετα</string>
     <string name="net_traffic_font">Φόντο</string>
 	
-	<string name="qs_themes_category_title">Θέματα ειδοπ/σεων</string>
+    <string name="qs_themes_category_title">Θέματα ειδοπ/σεων</string>
 
     <!-- Charging animation -->
     <string name="lockscreen_charging_animation_title">Γραφικά φόρτισης</string>
@@ -722,7 +725,7 @@
     <string name="allow_signature_fake">Αποδοχή ψευδών υπογραφών</string>
     <string name="allow_signature_fake_summary">Επίτρεψε σε εφαρμογές να παρακάμψουν την ασφάλεια του συστήματος, προσποιούμενες άλλες εφαρμογές. Προσοχή! Μπορεί να δημιουργηθεί κενό ασφαλείας.</string>
 	
-	<string name="fod">Αποτ.Οθόν.</string>
+    <string name="fod">Αποτ.Οθόν.</string>
     
     <!-- Screen off fod -->
     <string name="fod_gesture_title">Αποτύπωμα σε κλειδωμένη οθόνη</string>
