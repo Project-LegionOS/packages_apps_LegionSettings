@@ -19,7 +19,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceCategory
-        android:title="Lock Clock"/>
+        android:title="@string/lock_clock_title"/>
 
     <com.legion.settings.preferences.SecureSettingListPreference
         android:key="lockscreen_clock_selection"
@@ -74,7 +74,7 @@
         android:defaultValue="40" />
 
     <PreferenceCategory
-        android:title="Lock Date"/>
+        android:title="@string/lock_date_title"/>
 
     <com.legion.settings.preferences.SecureSettingListPreference
         android:key="lockscreen_date_selection"
@@ -108,7 +108,7 @@
         android:persistent="false" />
 
     <PreferenceCategory
-        android:title="Owner Info"/>
+        android:title="@string/owner_info_title"/>
 	
     <ListPreference
         android:key="lock_ownerinfo_fonts"
@@ -132,7 +132,7 @@
         android:persistent="false" />
 
     <PreferenceCategory
-        android:title="Lockscreen Item Alignment Options"/>
+        android:title="@string/lockscreen_item_alignment_title"/>
 
     <com.legion.settings.preferences.SecureSettingListPreference
         android:key="center_text_clock"

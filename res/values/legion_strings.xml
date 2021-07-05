@@ -478,6 +478,10 @@
 
     <!-- Q To X Clock -->
     <string name="center_text_clock_title">Lock Clock Alignment</string>
+    <string name="lock_clock_title">Lock Clock</string>
+    <string name="lock_date_title">Lock Date</string>
+    <string name="owner_info_title">Owner Info</string>
+    <string name="lockscreen_item_alignment_title">Lock Screen Item Alignment Options</string>
 
     <!-- Lockscreen Item Alignments -->
     <string name="lockscreen_date_alignment_title">LS Date Alignment</string>
@@ -903,7 +907,7 @@
     <string name="file_header_select_summary">Select an image from internal storage</string>
     <string name="status_bar_custom_header_shadow_title">Darken image</string>
 
-    <!--DerpQuest buttons-->
+    <!--Legion buttons-->
     <string name="buttons_title">Hardware buttons</string>
     <string name="buttons_summary">Tweak the actions of your devices physical buttons</string>
     <string name="power_button_category">Power</string>

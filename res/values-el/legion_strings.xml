@@ -478,6 +478,10 @@
 
     <!-- Q To X Clock -->
     <string name="center_text_clock_title">Κλείδωμα θέσης ρολογιού</string>
+    <string name="lock_clock_title">Ρολόι οθόν. κλειδώματος</string>
+    <string name="lock_date_title">Ημερομηνία οθόν. κλειδώματος</string>
+    <string name="owner_info_title">Πληροφορίες κατόχου</string>
+    <string name="lockscreen_item_alignment_title">Επιλογές θέσης αντικειμένων</string>
 
     <!-- Lockscreen Item Alignments -->
     <string name="lockscreen_date_alignment_title">Οθόν.κλειδ. Επιλογές ημερομηνίας</string>
