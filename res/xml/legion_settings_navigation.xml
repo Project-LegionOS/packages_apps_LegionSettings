@@ -28,11 +28,13 @@
 
     <SwitchPreference
         android:key="navbar_visibility"
+	settings:iconSpaceReserved="false"
         android:title="@string/navbar_visibility"
         android:summary="@string/navbar_vis_summary" />
 
     <Preference
         android:key="gesture_system_navigation"
+	settings:iconSpaceReserved="false"
         android:title="@string/system_navigation_title"
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
         settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" />
@@ -50,6 +52,7 @@
 -->
         <com.legion.settings.preferences.SecureSettingListPreference
             android:key="navbar_layout_views"
+	    settings:iconSpaceReserved="false"
             android:title="@string/navbar_layout_title"
             android:summary="%s"
             android:entries="@array/navbar_layout_entries"
@@ -59,6 +62,7 @@
 
         <com.legion.settings.preferences.SecureSettingSwitchPreference
             android:key="navbar_inverse_layout"
+	    settings:iconSpaceReserved="false"
             android:title="@string/navbar_invert_layout_title"
             android:defaultValue="false"
             android:dependency="navbar_visibility" />

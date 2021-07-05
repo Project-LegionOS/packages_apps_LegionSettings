@@ -18,18 +18,21 @@
 
     <com.legion.settings.preferences.SecureSettingSwitchPreference
         android:key="doze_enabled"
+	settings:iconSpaceReserved="false"
         android:title="@string/doze_title"
         android:defaultValue="true"
         android:summary="@string/doze_summary" />
 
     <com.legion.settings.preferences.SecureSettingSwitchPreference
         android:key="doze_always_on"
+	settings:iconSpaceReserved="false"
         android:defaultValue="false"
         android:title="@string/doze_always_on_title"
         android:summary="@string/doze_always_on_summary" />
 
     <com.legion.settings.preferences.SecureSettingSwitchPreference
         android:key="doze_on_charge"
+	settings:iconSpaceReserved="false"
         android:defaultValue="false"
         android:title="@string/doze_on_charge_title"
         android:summary="@string/doze_on_charge_summary" />
@@ -40,30 +43,35 @@
 
         <com.legion.settings.preferences.SecureSettingSwitchPreference
             android:key="doze_tilt_gesture"
+	    settings:iconSpaceReserved="false"
             android:defaultValue="false"
             android:title="@string/tilt_title"
             android:summary="@string/tilt_summary" />
 
         <com.legion.settings.preferences.SecureSettingSwitchPreference
             android:key="doze_pick_up_gesture"
+	    settings:iconSpaceReserved="false"
             android:defaultValue="false"
             android:title="@string/pickup_title"
             android:summary="@string/pickup_summary" />
 
         <com.legion.settings.preferences.SecureSettingSwitchPreference
             android:key="doze_handwave_gesture"
+	    settings:iconSpaceReserved="false"
             android:defaultValue="false"
             android:title="@string/handwave_title"
             android:summary="@string/handwave_summary" />
 
         <com.legion.settings.preferences.SecureSettingSwitchPreference
             android:key="doze_pocket_gesture"
+	    settings:iconSpaceReserved="false"
             android:defaultValue="false"
             android:title="@string/pocket_title"
             android:summary="@string/pocket_summary" />
 
         <com.legion.settings.preferences.SecureSettingSeekBarPreference
             android:key="doze_gesture_vibrate"
+	    settings:iconSpaceReserved="false"
             android:title="@string/doze_vibrate"
             android:summary="@string/doze_vibrate_summary"
             android:defaultValue="0"
@@ -80,24 +88,28 @@
 
         <com.legion.settings.preferences.SystemSettingSwitchPreference
             android:key="pulse_ambient_light"
+	    settings:iconSpaceReserved="false"
             android:title="@string/pulse_ambient_light_title"
             android:summary="@string/pulse_ambient_light_summary"
             android:defaultValue="false" />
 
         <com.legion.settings.preferences.SystemSettingSwitchPreference
             android:key="ambient_light_pulse_for_all"
+	    settings:iconSpaceReserved="false"
             android:title="@string/pulse_ambient_light_show_always_title"
             android:summary="@string/pulse_ambient_light_show_always_summary"
             android:defaultValue="false" />
 
         <com.legion.settings.preferences.SystemSettingSwitchPreference
             android:key="ambient_notification_light_enabled"
+	    settings:iconSpaceReserved="false"
             android:title="@string/ambient_notification_light_enabled_title"
             android:summary="@string/ambient_notification_light_enabled_summary"
             android:defaultValue="false" />
 
         <com.legion.settings.preferences.SystemSettingSwitchPreference
             android:key="ambient_notification_light_hide_aod"
+	    settings:iconSpaceReserved="false"
             android:title="@string/ambient_notification_light_hide_aod_title"
             android:summary="@string/ambient_notification_light_hide_aod_summary"
             android:defaultValue="false"
@@ -105,6 +117,7 @@
 
         <com.legion.settings.preferences.SystemSettingListPreference
             android:key="ambient_notification_color_mode"
+	    settings:iconSpaceReserved="false"
             android:title="@string/pulse_ambient_light_color_mode_title"
             android:entries="@array/pulse_ambient_light_color_mode_entries"
             android:entryValues="@array/pulse_ambient_light_color_mode_values"
@@ -113,11 +126,13 @@
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="ambient_notification_light_color"
+	    settings:iconSpaceReserved="false"
             android:title="@string/pulse_ambient_light_color_title"
             android:defaultValue="0xFFFFFFFF" />
 
         <com.legion.settings.preferences.SystemSettingListPreference
             android:key="ambient_light_layout"
+	    settings:iconSpaceReserved="false"
             android:title="@string/pulse_ambient_light_layout_title"
             android:entries="@array/pulse_ambient_light_layout_entries"
             android:entryValues="@array/pulse_ambient_light_layout_values"
@@ -126,6 +141,7 @@
 
         <com.legion.settings.preferences.CustomSeekBarPreference
             android:key="ambient_notification_light_duration"
+	    settings:iconSpaceReserved="false"
             android:title="@string/pulse_ambient_light_duration_title"
             android:max="5"
             settings:min="1"
@@ -134,6 +150,7 @@
 
         <com.legion.settings.preferences.CustomSeekBarPreference
             android:key="ambient_notification_light_repeats"
+	    settings:iconSpaceReserved="false"
             android:title="@string/pulse_ambient_light_repeat_count_title"
             android:max="10"
             settings:min="0"
@@ -141,6 +158,7 @@
 
         <com.legion.settings.preferences.SystemSettingListPreference
             android:key="ambient_light_repeat_direction"
+	    settings:iconSpaceReserved="false"
             android:title="@string/pulse_ambient_light_repeat_direction_title"
             android:entries="@array/pulse_ambient_light_repeat_direction_entries"
             android:entryValues="@array/pulse_ambient_light_repeat_direction_values"
@@ -149,6 +167,7 @@
 
         <com.legion.settings.preferences.SystemSettingListPreference
             android:key="ambient_notification_light_timeout"
+	    settings:iconSpaceReserved="false"
             android:title="@string/ambient_notification_light_timeout_title"
             android:entries="@array/ambient_notification_light_timeout_entries"
             android:entryValues="@array/ambient_notification_light_timeout_values"

@@ -19,16 +19,19 @@
 
     <com.legion.settings.preferences.SystemSettingSwitchPreference
         android:key="battery_light_enabled"
+	settings:iconSpaceReserved="false"
         android:title="@string/battery_light_enable"
         android:defaultValue="true" />
 
     <com.legion.settings.preferences.SystemSettingSwitchPreference
         android:key="battery_light_allow_on_dnd"
+	settings:iconSpaceReserved="false"
         android:title="@string/battery_light_allow_on_dnd_title"
         android:defaultValue="false" />
 
     <com.legion.settings.preferences.SystemSettingSwitchPreference
         android:key="battery_light_low_blinking"
+	settings:iconSpaceReserved="false"
         android:title="@string/battery_light_low_blinking_title"
         android:defaultValue="false" />
 
@@ -36,28 +39,32 @@
         android:key="battery_light_cat"
         android:title="@string/battery_light_cat">
         <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="battery_light_low_color"
-	    android:title="@string/battery_light_low_color"
+        android:key="battery_light_low_color"
+	settings:iconSpaceReserved="false"
+	android:title="@string/battery_light_low_color"
 	    ledPreview="true"
-	    settings:defaultColorValue="0xFFFF0000" />
+	settings:defaultColorValue="0xFFFF0000" />
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="battery_light_medium_color"
-	    android:title="@string/battery_light_medium_color"
+        android:key="battery_light_medium_color"
+	settings:iconSpaceReserved="false"
+	android:title="@string/battery_light_medium_color"
 	    ledPreview="true"
-            settings:defaultColorValue="0xFFFFFF00" />
+        settings:defaultColorValue="0xFFFFFF00" />
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="battery_light_full_color"
-	    android:title="@string/battery_light_full_color"
+        android:key="battery_light_full_color"
+	settings:iconSpaceReserved="false"
+	android:title="@string/battery_light_full_color"
 	    ledPreview="true"
-	    settings:defaultColorValue="0xFFFFFF00" />
+	settings:defaultColorValue="0xFFFFFF00" />
 
         <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="battery_light_reallyfull_color"
+        android:key="battery_light_reallyfull_color"
+	settings:iconSpaceReserved="false"
 	    android:title="@string/battery_light_reallyfull_color"
 	    ledPreview="true"
-	    settings:defaultColorValue="0xFF00FF00" />
+	settings:defaultColorValue="0xFF00FF00" />
     </PreferenceCategory>
 
 </PreferenceScreen>

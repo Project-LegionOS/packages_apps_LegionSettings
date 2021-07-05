@@ -20,10 +20,12 @@
 
     <Preference
         android:key="themes_header"
+	settings:iconSpaceReserved="false"
         android:layout="@layout/themes_header" />
 
     <ListPreference
         android:key="theme_switch"
+	settings:iconSpaceReserved="false"
         android:title="@string/theme_type_title"
 	android:summary="%s"
         android:dialogTitle="@string/theme_type_summary"
@@ -33,6 +35,7 @@
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="accent_color"
+	settings:iconSpaceReserved="false"
         android:title="@string/accent_color"
         android:summary="@string/accent_summary"
         android:defaultValue="0xffffff"
@@ -40,6 +43,7 @@
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="gradient_color"
+	settings:iconSpaceReserved="false"
         android:title="@string/gradient_color"
         android:summary="@string/gradient_summary"
         android:defaultValue="0xffffff"
@@ -47,6 +51,7 @@
 
     <com.legion.settings.preferences.SystemSettingListPreference
         android:key="switch_style"
+	settings:iconSpaceReserved="false"
         android:title="@string/switch_style_title"
         android:dialogTitle="@string/switch_style_title"
         android:entries="@array/switch_style_entries"
@@ -56,18 +61,22 @@
 
     <ListPreference
         android:key="android.theme.customization.font"
+	settings:iconSpaceReserved="false"
         android:title="@string/theme_customization_font_title"/>
 
     <ListPreference
         android:key="android.theme.customization.adaptive_icon_shape"
+	settings:iconSpaceReserved="false"
         android:title="@string/theme_customization_icon_shape_title"/>
 
     <ListPreference
         android:key="android.theme.customization.icon_pack.android"
+	settings:iconSpaceReserved="false"
         android:title="@string/theme_customization_sysui_icon_title"/>
 
     <ListPreference
         android:key="ui_style"
+	settings:iconSpaceReserved="false"
         android:title="@string/ui_style_title"
         android:entries="@array/ui_style_selector_entries"
         android:entryValues="@array/ui_style_selector_values"
@@ -75,16 +84,19 @@
 
     <com.legion.settings.preferences.SystemSettingSwitchPreference 
         android:key="settings_spacer" 
+		settings:iconSpaceReserved="false"
         android:title="@string/enable_oneui" 
         android:summary="@string/enable_oneui_summary" 
         android:defaultValue="true" />
 
     <PreferenceCategory
-	android:key="qs_category" 
+	android:key="qs_category"
+        settings:iconSpaceReserved="false"	
         android:title="@string/qs_themes_category_title" > 
 
         <com.legion.settings.preferences.CustomSeekBarPreference
             android:key="qs_panel_alpha"
+	    settings:iconSpaceReserved="false"
             android:title="@string/qs_panel_alpha_title"
             android:summary="@string/qs_panel_alpha_summary"
             android:max="100"
@@ -94,6 +106,7 @@
 
         <ListPreference
             android:key="brightness_slider_style"
+			settings:iconSpaceReserved="false"
             android:title="@string/brightness_slider_style_title"
             android:entries="@array/brightness_slider_style_selector_entries"
             android:entryValues="@array/brightness_slider_style_selector_values"
@@ -102,6 +115,7 @@
    
         <ListPreference
             android:key="panel_bg"
+	    settings:iconSpaceReserved="false"
             android:title="@string/panel_bg_title"
             android:dialogTitle="@string/panel_bg_dialog_title"
             android:entries="@array/panel_bg_titles"
@@ -109,6 +123,7 @@
 
         <ListPreference
             android:key="qs_tile_style"
+	    settings:iconSpaceReserved="false"
             android:title="@string/qs_tile_style_title"
             android:persistent="false"
             android:entries="@array/qs_selector_entries"
@@ -117,6 +132,7 @@
 
         <ListPreference
             android:key="qs_header_style"
+	    settings:iconSpaceReserved="false"
             android:title="@string/qs_header_style_title"
             android:persistent="false"
             android:entries="@array/qs_header_style_entries"
@@ -125,6 +141,7 @@
 
         <com.legion.settings.preferences.SystemSettingListPreference
             android:key="qs_panel_bg_use_new_tint"
+	    settings:iconSpaceReserved="false"
             android:title="@string/qs_bg_use_new_tint"
 	    android:dialogTitle="@string/qs_bg_use_new_tint"
             android:entries="@array/qs_tint_entries"

@@ -25,18 +25,21 @@
     <!-- Heads up -->
     <Preference
         android:key="heads_up_notifications"
+	settings:iconSpaceReserved="false"
         android:title="@string/heads_up_notifications"
         android:summary="@string/heads_up_summary"
         android:fragment="com.legion.settings.fragments.HeadsUpSettings" />
 
     <com.legion.settings.preferences.SystemSettingSwitchPreference
         android:key="notification_headers"
+	settings:iconSpaceReserved="false"
         android:title="@string/notification_headers_title"
         android:summary="@string/notification_headers_summary"
         android:defaultValue="true" />
 
     <com.legion.settings.preferences.SystemSettingSwitchPreference
         android:key="center_notification_headers"
+	settings:iconSpaceReserved="false"
         android:title="@string/center_notification_headers_title"
         android:summary="@string/center_notification_headers_summary"
         android:dependency="notification_headers"
@@ -44,6 +47,7 @@
 
     <Preference
         android:key="charging_light"
+	settings:iconSpaceReserved="false"
         android:title="@string/battery_light_settings"
         android:summary="@string/battery_light_summary"
         android:fragment="com.legion.settings.fragments.BatteryLightSettings" />
@@ -54,16 +58,19 @@
 
         <com.legion.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
+		settings:iconSpaceReserved="false"
             android:title="@string/incall_vibrate_connect_title"
             android:defaultValue="false" />
 
         <com.legion.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
+	    settings:iconSpaceReserved="false"
             android:title="@string/incall_vibrate_call_wait_title"
             android:defaultValue="false" />
 
         <com.legion.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
+	    settings:iconSpaceReserved="false"
             android:title="@string/incall_vibrate_disconnect_title"
             android:defaultValue="false" />
       </PreferenceCategory>
@@ -74,11 +81,13 @@
 
          <com.legion.settings.preferences.SystemSettingSwitchPreference
             android:key="flash_on_call_waiting"
+	    settings:iconSpaceReserved="false"
             android:title="@string/flash_on_call_title"
             android:defaultValue="false" />
 
          <com.legion.settings.preferences.CustomSeekBarPreference
             android:key="flash_on_call_waiting_delay"
+	    settings:iconSpaceReserved="false"
             android:max="1000"
             android:persistent="false"
             android:title="@string/flash_on_call_delay_title"

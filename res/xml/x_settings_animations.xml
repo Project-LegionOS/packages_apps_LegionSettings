@@ -90,6 +90,7 @@
 -->
     <ListPreference
         android:key="pref_scrollingcache"
+	settings:iconSpaceReserved="false"
         android:dialogTitle="@string/pref_scrollingcache_title"
         android:title="@string/pref_scrollingcache_title"
         android:summary="@string/pref_scrollingcache_summary"
@@ -98,6 +99,7 @@
 
     <ListPreference
         android:key="toast_animation"
+	settings:iconSpaceReserved="false"
         android:title="@string/toast_animation_title"
         android:entries="@array/toast_animation_entries"
         android:entryValues="@array/toast_animation_values"
@@ -105,6 +107,7 @@
 
     <ListPreference
         android:key="listview_animation"
+	settings:iconSpaceReserved="false"
         android:dialogTitle="@string/listview_animation_title"
         android:title="@string/listview_animation_title"
         android:entries="@array/listview_animation_entries"
@@ -113,6 +116,7 @@
 
     <ListPreference
         android:key="listview_interpolator"
+	settings:iconSpaceReserved="false"
         android:dialogTitle="@string/listview_interpolator_title"
         android:title="@string/listview_interpolator_title"
         android:entries="@array/listview_interpolator_entries"
@@ -121,6 +125,7 @@
 	    
     <ListPreference
         android:key="screen_off_animation"
+	settings:iconSpaceReserved="false"
         android:title="@string/screen_off_animation_title"
         android:entries="@array/screen_off_animation_entries"
         android:entryValues="@array/screen_off_animation_values"
@@ -133,6 +138,7 @@
 	  
         <com.legion.settings.preferences.SystemSettingIntListPreference
             android:key="anim_tile_style"
+	    settings:iconSpaceReserved="false"
             android:title="@string/qs_tile_animation_style_title"
             android:entries="@array/qs_tile_animation_style_entries"
             android:entryValues="@array/qs_tile_animation_style_values"
@@ -141,6 +147,7 @@
 			
         <com.legion.settings.preferences.SystemSettingIntListPreference
             android:key="anim_tile_duration"
+	    settings:iconSpaceReserved="false"
             android:title="@string/qs_tile_animation_duration_title"
             android:entries="@array/qs_tile_animation_duration_entries"
             android:entryValues="@array/qs_tile_animation_duration_values"
@@ -149,6 +156,7 @@
 			
         <com.legion.settings.preferences.SystemSettingIntListPreference
             android:key="anim_tile_interpolator"
+	    settings:iconSpaceReserved="false"
             android:title="@string/qs_tile_animation_interpolator_title"
             android:entries="@array/qs_tile_animation_interpolator_entries"
             android:entryValues="@array/qs_tile_animation_interpolator_values"

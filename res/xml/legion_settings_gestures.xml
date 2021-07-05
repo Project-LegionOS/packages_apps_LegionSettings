@@ -24,12 +24,14 @@
 
    <com.legion.settings.preferences.SystemSettingSwitchPreference
         android:key="torch_long_press_power_gesture"
+	settings:iconSpaceReserved="false"
         android:title="@string/torch_long_press_power_gesture_title"
         android:summary="@string/torch_long_press_power_gesture_desc"
         android:defaultValue="false" />
 
     <com.legion.settings.preferences.SystemSettingListPreference
         android:key="torch_long_press_power_timeout"
+	settings:iconSpaceReserved="false"
         android:dialogTitle="@string/torch_long_press_power_timeout_title"
         android:title="@string/torch_long_press_power_timeout_title"
         android:summary="%s"
@@ -41,12 +43,14 @@
 
     <com.legion.settings.preferences.SystemSettingSwitchPreference 
         android:key="three_finger_gesture"
+	settings:iconSpaceReserved="false"
         android:title="@string/three_finger_gesture"
         android:summary="@string/three_finger_gesture_summary"
         android:defaultValue="false" />
 
     <com.legion.settings.preferences.SystemSettingListPreference
             android:key="screenshot_type"
+	    settings:iconSpaceReserved="false"
             android:entries="@array/screenshot_type_entries"
             android:entryValues="@array/screenshot_type_values"
             android:title="@string/screenshot_type_title"
@@ -58,12 +62,14 @@
 
     <com.legion.settings.preferences.SystemSettingSwitchPreference
         android:key="double_tap_sleep_lockscreen"
+	settings:iconSpaceReserved="false"
         android:title="@string/double_tap_sleep_lockscreen_title"
         android:summary="@string/double_tap_sleep_lockscreen_summary"
         android:defaultValue="false" />
 
     <com.legion.settings.preferences.SystemSettingSwitchPreference
          android:key="double_tap_sleep_gesture"
+	 settings:iconSpaceReserved="false"
          android:title="@string/double_tap_sleep_gesture_title"
          android:summary="@string/double_tap_sleep_gesture_summary"
          android:defaultValue="false" />

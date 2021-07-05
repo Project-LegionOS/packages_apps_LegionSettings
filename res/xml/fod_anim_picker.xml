@@ -19,6 +19,7 @@
     <!-- Preview -->
     <com.legion.settings.preferences.FODAnimPicker
         android:key="fod_anim"
+	settings:iconSpaceReserved="false"
         android:layout="@layout/fod_anim_preference"
         android:selectable="false"/>
 

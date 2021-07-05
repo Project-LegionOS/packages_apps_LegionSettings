@@ -24,6 +24,7 @@
 
     <PreferenceScreen
             android:key="status_bar_icons"
+	    settings:iconSpaceReserved="false"
             android:title="@string/statusbar_tuner_title"
             android:summary="@string/statusbar_tuner_summary">
             <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
@@ -31,36 +32,56 @@
 
         <com.legion.settings.preferences.SystemSettingSwitchPreference
             android:key="statusbar_icons_style"
+	    settings:iconSpaceReserved="false"
             android:title="@string/statusbar_icons_style"
             android:summary="@string/statusbar_icons_style_summary"
             android:defaultValue="true" />
+			
+	<Preference
+            android:key="statusbar_battery"
+	    settings:iconSpaceReserved="false"
+            android:title="@string/battery_percent_title"
+            android:summary="@string/battery_percent_summary"
+            android:fragment="com.legion.settings.fragments.StatusbarBatterySettings"/>
+			
+    <Preference
+        android:fragment="com.legion.settings.fragments.ClockOptions"
+        android:key="clock_options_category"
+		settings:iconSpaceReserved="false"
+        android:summary="@string/clock_options_summary"
+        android:title="@string/clock_options_title" />    
 
-     <Preference
-            android:key="traffic" 
-            android:fragment="com.legion.settings.fragments.Traffic"
+    <Preference
+        android:key="traffic"
+        settings:iconSpaceReserved="false"		
+        android:fragment="com.legion.settings.fragments.Traffic"
 	    android:title="@string/traffic_title"
 	    android:summary="@string/network_traffic_summary" />
 
     <com.legion.settings.preferences.SystemSettingSwitchPreference
         android:key="status_bar_brightness_control"
+	settings:iconSpaceReserved="false"
         android:title="@string/status_bar_toggle_brightness"
         android:summary="@string/status_bar_toggle_brightness_summary"
         android:defaultValue="false" />
 
     <com.legion.settings.preferences.SystemSettingSwitchPreference
         android:key="show_fourg"
+	settings:iconSpaceReserved="false"
         android:title="@string/show_fourg_title"
         android:summary="@string/show_fourg_summary"
         android:defaultValue="false" />
 
     <com.legion.settings.preferences.SystemSettingSwitchPreference
         android:key="show_volte_icon"
+	settings:iconSpaceReserved="false"
         android:title="@string/volte_switch_title"
         android:summary="@string/volte_switch_summary"
         android:defaultValue="true" />
 
     <com.legion.settings.preferences.SystemSettingListPreference
          android:key="volte_icon_style"
+	 settings:iconSpaceReserved="false"
          android:title="@string/volte_icon_style_title"
          android:entries="@array/volte_icon_type_entries"
          android:entryValues="@array/volte_icon_type_values"
@@ -70,6 +91,7 @@
 
     <com.legion.settings.preferences.SystemSettingListPreference
          android:key="vowifi_icon"
+	 settings:iconSpaceReserved="false"
          android:title="@string/vowifi_icon_title"
          android:entries="@array/vowifi_icon_entries"
          android:entryValues="@array/vowifi_icon_values"
@@ -78,22 +100,11 @@
 
     <com.legion.settings.preferences.SystemSettingListPreference
          android:key="vowifi_icon_style"
+	 settings:iconSpaceReserved="false"
          android:title="@string/vowifi_icon_style_title"
          android:entries="@array/vowifi_icon_style_entries"
          android:entryValues="@array/vowifi_icon_style_values"
          android:summary="%s"
          android:defaultValue="0"/>
-
-        <Preference
-            android:key="statusbar_battery"
-            android:title="@string/battery_percent_title"
-            android:summary="@string/battery_percent_summary"
-            android:fragment="com.legion.settings.fragments.StatusbarBatterySettings"/>
-
-     <Preference
-        android:fragment="com.legion.settings.fragments.ClockOptions"
-        android:key="clock_options_category"
-        android:summary="@string/clock_options_summary"
-        android:title="@string/clock_options_title" />
 
 </PreferenceScreen>
